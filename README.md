@@ -65,4 +65,5 @@ It's super simple:
 2) style.css - Makes everything look nice
 3) script.js - Makes everything work
 4) data.js - Contains all the movie information
-
+5) moviePage.html - Contains the genral structure for every new moive page
+6) miveDetails.js - Conatis the functions to genrate new html page fro every page and to fetch details.
