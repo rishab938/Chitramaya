@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChitraMaya - Find Your Next Movie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ChitraMaya</h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#movies">Movies</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="search">
+        <h2>Find Your Next Movie</h2>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search movies..." oninput="filterMovies()">
+            <select id="genreFilter" onchange="filterMovies()">  
+                <option value="">All Genres</option>
+                <option value="Action">Action</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Drama">Drama</option>
+                <option value="Scientific">Scientific</option>
+            </select>
+            <select id="ratingFilter" onchange="filterMovies()">
+                <option value="">All Ratings</option>
+                <option value="6">6+</option>
+                <option value="7">7+</option>
+                <option value="8">8+</option>
+                <option value="9">9+</option>
+            </select>
+        </div>
+    </section>
+
+    <section id="movies">
+       <div id="movie-list"></div>
+    </section>
+
+    <div id="movie-details-modal" onclick="closeMovieDetails(event)">
+        <div class="movie-details" onclick="event.stopPropagation()"></div>
+    </div>
+    <script src="script.js"></script>
+    <script src="data.js"></script>
+</body>
+</html>
