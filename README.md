@@ -1,3 +1,4 @@
+![Screenshot 2024-12-19 104047](https://github.com/user-attachments/assets/2f31a995-8ebd-4de2-a17c-d12f391f3699)
 ChitraMaya is a simple website that helps you find movies to watch. 
 Think of it like a digital movie library where you can search and explore different films. 
 The name comes from "Chitra" (meaning film) and "Maya" (meaning magic).
