@@ -78,11 +78,3 @@ function filterMovies() {
     });
     displayMovies(filteredMovies);
 }
-
-function closeMovieDetails(event) {
-    if (event && event.target.id === 'movie-details-modal') {
-        document.getElementById('movie-details-modal').style.display = 'none';
-    } else if (!event) {
-        document.getElementById('movie-details-modal').style.display = 'none';
-    }
-}
